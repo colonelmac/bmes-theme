@@ -1,0 +1,235 @@
+﻿/*
+Theme Name: BMES
+Description: Custom theme for BMES at UCSD.
+Version: v1.1.0
+Author: Derrick McMillen
+Author URI: http://colonelmac.com
+Github Theme URI: https://github.com/colonelmac/BMES/tree/master/theme/bmes
+*/
+
+/* PAGE LAYOUT */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body { 
+	height: 100%; 
+	background: #F6F6F1;
+	font-family: "Lucida Grande",Verdana,"Bitstream Vera Sans",Arial,sans-serif;
+	font-size: 12px;
+	line-height: 22px;
+}
+
+body {
+	text-align: center; 
+}
+
+#container {
+	margin: 0 center; 
+	min-height: 100%;
+	width: 100%;
+	text-align: left; 
+}
+
+/* useful if you intend to use side nav ever */
+#outer { 
+	clear: both;
+} 
+
+#inner {
+	width: 100%;
+	padding: 80px 0 120px 0;
+}
+
+#page-title {
+
+	display: block;
+	margin: -70px 0 45px 0; 
+	font-size: 32px; 
+	font-weight: bold; 
+	font-family: Georgia, serif;
+	color: #333;
+}
+
+#content {
+	
+	margin: 0 auto;
+	height: 100%;
+	width: 96%;
+	min-width: 700px;
+	max-width: 1160px;
+	padding: 20px;
+	border: 1px solid #ECECE7;
+	background: #FFF;
+	box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3); 
+}
+
+#header {	
+	width: 100%;
+	border-bottom: 1px solid #B0B0B0; 
+}
+
+#masthead {
+	background: #222; 
+}
+
+#masthead-inner {
+	margin: 0 auto;
+	height: 70px;
+	width: 96%;
+	min-width: 740px;
+	max-width: 1200px;
+}
+
+#masthead-inner img {
+	padding: 5px 0 5px 0;
+}
+
+#navigation {
+	height: 35px;
+	border-top: 3px solid #707070;
+	background: #CBC8B9;
+}
+
+#navigation-inner {
+	margin: 0 auto;
+	width: 96%;
+	min-width: 740px;
+	max-width: 1200px;
+}
+
+#footer {
+	width: 100%;
+	height: 65px;
+	margin: 0 auto; 
+	padding-top: 5px;
+	margin-top: -65px;
+	text-align: center;
+	font-size: 11px;
+	background: #CBC8B9;
+	border-top: 1px solid #B0B0B0;
+}
+
+/* NAVIGATION BAR */
+
+#navigation-bar {
+	display: block;
+	list-style: none;
+}
+
+#navigation-bar li {
+	display: block;
+	float: left; 
+	margin-right: 20px;
+}
+
+#navigation-bar li a {
+	display: block;
+	padding-top: 5px;
+	height: 30px;
+	color: #333; 
+	text-decoration: none;
+	font-family: Georgia, serif; 
+	font-size: 16pt;
+}
+
+#navigation-bar li ul {
+    padding-top: 0;
+    position: absolute;
+    left: -999em;
+	border: 1px solid #B0B0B0;
+	width: 10em;
+	z-index: 100;
+}
+
+#navigation-bar li ul li {
+    margin: 0;
+    padding: 0; 
+    width: inherit;
+    background: #FFF;
+	color: #333;
+}
+
+#navigation-bar li ul li:last-child {
+	border: none;
+}
+
+#navigation-bar li ul li a {
+	padding: 5px 0 0 10px;
+	font-size: 12px;
+	font-family: Verdana, sans-serif;
+	height: 25px;
+}
+
+#navigation-bar li ul li:hover {
+	background: #FFF;
+}
+
+#navigation-bar li:hover ul {
+    left: auto;
+}
+
+#navigation-bar li ul li a:hover {
+	background: none; 
+	font-weight: bold;
+}
+
+#navigation-bar li:hover {
+	background: transparent url("./img/arrow.png") no-repeat 50% 0; 
+}
+
+/* LOOP */
+
+.post a {
+	color: #464646;
+}
+
+.post h2 a {
+	display: inline-block;
+	padding-top: 20px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+
+.first-post h2 a {
+	padding-top: 0;
+}
+
+.postmetadata {
+	font-style: italic;
+	padding-bottom: 10px;
+}
+
+a.readmore {
+	padding: 0 11px 0 3px;
+	display: inline-block;
+	background-image: url("./img/yahoo.png");
+	background-position: right -2212px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a.readmore:hover {
+	text-decoration: underline;
+}
+
+/* SLIDER */
+
+/*
+#slider-nav {
+	float: right;
+	width: 150px;
+}
+
+#slider-nav ul {
+	list-style: none;
+	border: 1px solid #B0B0B0;
+}*/
+
+/* IE Quirks */
+
+a img {
+	border: none;
+}
