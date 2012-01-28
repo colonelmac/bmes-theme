@@ -215,18 +215,48 @@ a.readmore:hover {
 	text-decoration: underline;
 }
 
-/* SLIDER */
+/* NEWSLETTER */
 
-/*
-#slider-nav {
-	float: right;
-	width: 150px;
+#newsletter {
+	width: 700px;
+	margin: 10px auto 10px auto;
+	text-align: center;
 }
 
-#slider-nav ul {
-	list-style: none;
-	border: 1px solid #B0B0B0;
-}*/
+#newsletter span {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 18px;
+	margin-right: 20px;
+}
+
+#newsletter input[type=text] {
+	height: 25px;
+	width: 300px;
+	border: 1px solid #BBBBBB;
+	font-size: 14px !important;
+}
+
+/* BUTTONS */
+
+.button {
+	margin: 0 1em 0 10px;
+	background: url("../images/white-grad.png") repeat-x scroll left top #F2F2F2;
+	text-shadow: 0 1px 0 #FFFFFF;
+	border-color: #BBBBBB;
+    color: #464646;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    font-size: 14px !important;
+    line-height: 13px;
+    padding: 3px 8px;
+    text-decoration: none;
+}
+
+.button:hover {
+	border-color: #666666;
+    color: #000000;
+}
 
 /* IE Quirks */
 

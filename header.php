@@ -44,7 +44,18 @@
 		<div id="outer">
 			<div id="inner">
 			
-				<?php if(is_home()) : slider(); endif; ?>
+				<?php if(is_home()) : slider(); ?>
+				
+					<div id="newsletter">
+						<form method="post"> 
+							<span>Subscribe to our Newsletter:</span>
+							<input type="hidden" name="na" value="s"/> 
+							<input type="text" name="ne" />  
+							<input type="submit" class ="button button-secondary submit" value="Submit"/> 
+						</form> 
+					</div>
+				
+				<?php endif; ?>
 				
 				<div id="content">
 	
